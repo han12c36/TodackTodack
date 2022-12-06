@@ -59,6 +59,7 @@
     <Compile Include="Assets\TodackTodack\Scripts\Player\Player.cs" />
     <Compile Include="Assets\TodackTodack\Scripts\MyStl\MyStl.cs" />
     <Compile Include="Assets\TodackTodack\Scripts\Abstacts\Unit.cs" />
+    <Compile Include="Assets\TodackTodack\Scripts\Player\MoveCtrl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Default\Fantasy Series Medieval Knight\www.meshtint.com.txt" />

@@ -27,11 +27,16 @@ namespace Structs
         public int maxHp;
         public int curHp;
 
-        public Status(Enums.UnitNameTable unitName,int maxHp,int curHp)
+        public float moveSpeed;
+        public float runSpeed;
+
+        public Status(Enums.UnitNameTable unitName,int maxHp,int curHp,float moveSpeed,float runSpeed)
         {
             this.unitName = unitName;
             this.maxHp = maxHp;
             this.curHp = curHp;
+            this.moveSpeed = moveSpeed;
+            this.runSpeed = runSpeed;
         }
     }
 }

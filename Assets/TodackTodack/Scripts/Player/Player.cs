@@ -42,52 +42,10 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        AllInput();
+
     }
     private void FixedUpdate()
     {
 
     }
-
-    private void AllInput()
-    {
-
-        Vector3 dir = Vector3.zero;
-
-        if (Input.GetKey(KeyCode.W))
-        {
-            //aniCtrl.SetFloat("blend",Input.GetAxisRaw("Horizontal"));
-            //  if (Input.GetKey(KeyCode.D))
-            dir = Vector3.forward;
-                
-            //lse
-            //
-            //   Debug.Log(Input.GetAxisRaw("Vertical"));
-            //
-        }
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            dir = (dir + Vector3.right).normalized;
-        }
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            dir = (dir + Vector3.left).normalized;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            dir = (dir + Vector3.down).normalized;
-        }
-
-        if (dir != Vector3.zero)
-        {
-            dir.y = 0;
-            dir.Normalize();
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * 2.0f);
-        }
-        transform.position += transform.forward * 3.0f * Time.deltaTime;
-    }
-
-
 }
